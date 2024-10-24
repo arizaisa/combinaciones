@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #cf6973;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eff1e1;
+  font-family: Pencerio-Hairline;
+  font-size: 40px;
+}
+
+main {
+  background-color: #eff1e1;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text_box {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 150px;
+  color: #140f08;
+  font-family: Poppins-Light;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  height: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: start;
+}
+
+.button_wrapper {
+  font-family: Poppins-Light;
+  color: #cf6973;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+}
+
+.button_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.button_wrapper p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 99px;
+  color: #eff1e1;
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button_wrapper:hover p {
+  opacity: 0.8;
+}
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #cf6973;
+  font-family: Poppins-Light;
+  font-size: 18px;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #cf6973;
+  color: #eff1e1;
+  font-family: Pencerio-Hairline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+@media print {
+  .botones {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 620px) {
+}
