@@ -1,12 +1,12 @@
 // Boton 1
 
-let background_button = document.getElementById("backgroung_button"); 
+let background_button = document.getElementById("backgroung_button");
 
 console.log(background_button);
 
-background_button.addEventListener("click", changeBackground); 
+background_button.addEventListener("click", changeBackground);
 
-let background_image = document.getElementById("backgroung_image"); 
+let background_image = document.getElementById("backgroung_image");
 
 let background_counter = 1;
 
